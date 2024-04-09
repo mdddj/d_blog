@@ -5,11 +5,11 @@ use validator::Validate;
 
 #[derive(Deserialize, Debug, Validate, ToSchema, Default)]
 pub struct PostAddRequest {
-    // #[salvo(schema(example = "test"))]
+    #[salvo(schema(example = "test"))]
     pub title: String,
-    // #[salvo(schema(example = "test content"))]
+    #[salvo(schema(example = "test content"))]
     pub content: String,
-    // #[salvo(schema(example = 1))]
+    #[salvo(schema(example = 1))]
     pub category_id: i32,
 }
 
