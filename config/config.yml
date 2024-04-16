@@ -3,7 +3,8 @@ server:
   address: "0.0.0.0:5800"
   ssl: false
   cors_allow_origin:
-    - "https://salvo.rs"
+    - "http://localhost:8000"
+    - "http://127.0.0.1:8000"
 
 database:
   database_url: "sqlite:data/demo.db"

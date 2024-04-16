@@ -1,13 +1,17 @@
 use crate::db::init_db_conn;
 use crate::middleware::{cors::cors_middleware, handle_404::handle_404};
 use crate::routers::router;
+use crate::services::user::{check_and_init_admin_user};
 use config::{CERT_KEY, CFG};
 use salvo::catcher::Catcher;
 use salvo::conn::rustls::{Keycert, RustlsConfig};
+use salvo::cors::Cors;
+use salvo::http::Method;
 use salvo::prelude::*;
 use salvo::server::ServerHandle;
 use tokio::signal;
 use tracing::info;
+
 mod app_error;
 mod app_writer;
 mod config;
@@ -30,15 +34,17 @@ async fn main() {
         .file_name(&CFG.log.file_name)
         .rolling(&CFG.log.rolling)
         .init();
-    tracing::info!("log level: {}", &CFG.log.filter_level);
+    info!("log level: {}", &CFG.log.filter_level);
+
 
     init_db_conn().await;
     let router = router();
     let service: Service = router.into();
-    let service = service.catcher(Catcher::default().hoop(handle_404)); //.hoop(_cors_handler).hoop(handle_404));
+    let _cors_handler = cors_middleware();
+    let service = service.catcher(Catcher::default().hoop(_cors_handler).hoop(handle_404)); //.hoop(_cors_handler).hoop(handle_404));
     println!("🌪️ {} is starting ", &CFG.server.name);
     println!("🔄 listen on {}", &CFG.server.address);
-    let _cors_handler = cors_middleware();
+
     match CFG.server.ssl {
         true => {
             println!(
@@ -57,6 +63,7 @@ async fn main() {
             let server = Server::new(acceptor);
             let handle = server.handle();
             tokio::spawn(shutdown_signal(handle));
+            tokio::spawn(check_and_init_admin_user());
             server.serve(service).await;
         }
         false => {
@@ -68,6 +75,7 @@ async fn main() {
             let server = Server::new(acceptor);
             let handle = server.handle();
             tokio::spawn(shutdown_signal(handle));
+            tokio::spawn(check_and_init_admin_user());
             server.serve(service).await;
         }
     }

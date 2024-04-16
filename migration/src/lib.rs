@@ -6,6 +6,12 @@ mod m20240407_054555_create_post_table;
 mod m20240407_054844_create_category_table;
 mod m20240407_055151_create_post_tags_table;
 mod m20240407_055250_create_tag_table;
+mod m20240411_032202_create_product_table;
+mod m20240411_032637_create_product_category_table;
+mod m20240411_034848_create_product_sku_table;
+mod m20240411_053356_create_product_sku_name_table;
+mod m20240411_053401_create_product_sku_value_table;
+mod m20240411_053408_create_product_sku_name_value_table;
 
 pub struct Migrator;
 
@@ -19,6 +25,12 @@ impl MigratorTrait for Migrator {
             Box::new(m20240407_054844_create_category_table::Migration),
             Box::new(m20240407_055151_create_post_tags_table::Migration),
             Box::new(m20240407_055250_create_tag_table::Migration),
+            Box::new(m20240411_032202_create_product_table::Migration),
+            Box::new(m20240411_032637_create_product_category_table::Migration),
+            Box::new(m20240411_034848_create_product_sku_table::Migration),
+            Box::new(m20240411_053356_create_product_sku_name_table::Migration),
+            Box::new(m20240411_053401_create_product_sku_value_table::Migration),
+            Box::new(m20240411_053408_create_product_sku_name_value_table::Migration),
         ]
     }
 }

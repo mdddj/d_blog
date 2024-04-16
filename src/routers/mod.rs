@@ -1,36 +1,75 @@
 use crate::middleware::{cors::cors_middleware, jwt::jwt_middleware};
 use crate::routers::exception::post_add_exception;
+use crate::routers::post::*;
+use crate::routers::product::{
+    delete_product, get_product_all, post_add_product, put_update_product,
+};
+use crate::routers::product_category::*;
 use salvo::{
     prelude::{CatchPanic, Logger, OpenApi, SwaggerUi},
     Router,
 };
-use crate::routers::post::*;
 
 use self::{
+    category::*,
     demo::hello,
     user::{delete_user, get_users, post_add_user, post_login, put_update_user},
-    category::*,
 };
 
+pub mod category;
 pub mod demo;
 pub mod exception;
+pub mod post;
+pub mod product;
+pub mod product_category;
 mod static_routers;
 pub mod user;
-pub mod post;
-pub mod category;
 
 pub fn router() -> Router {
     let exception_routers = Router::with_path("/api/exception").post(post_add_exception);
 
-    let post_routers = Router::with_path("/api/post").get(get_post_all).post(post_add_post).push(Router::with_path("<id>").put(put_update_post).delete(delete_post)
-        .get(get_post_by_id));
+    let post_routers = Router::with_path("/api/post")
+        .get(get_post_all)
+        .post(post_add_post)
+        .push(
+            Router::with_path("<id>")
+                .put(put_update_post)
+                .delete(delete_post)
+                .get(get_post_by_id),
+        );
+    let product_router = Router::with_path("/api/product")
+        .get(get_product_all)
+        .post(post_add_product)
+        .push(
+            Router::with_path("<id>")
+                .put(put_update_product)
+                .delete(delete_product),
+        );
 
-    let category_routers = Router::with_path("/api/category").get(get_category_all).post(post_add_category).push(Router::with_path("<id>").put(put_update_category).delete(delete_category));
+    let product_category_router = Router::with_path("/api/product_category")
+        .get(get_product_category_all)
+        .post(post_add_product_category)
+        .push(
+            Router::with_path("<id>")
+                .put(put_update_product_category)
+                .delete(delete_product_category),
+        );
+
+    let category_routers = Router::with_path("/api/category")
+        .get(get_category_all)
+        .post(post_add_category)
+        .push(
+            Router::with_path("<id>")
+                .put(put_update_category)
+                .delete(delete_category),
+        );
     let mut no_auth_routers = vec![
         Router::with_path("/api/login").post(post_login),
         exception_routers,
         post_routers,
         category_routers,
+        product_router,
+        product_category_router,
     ];
 
     let _cors_handler = cors_middleware();
