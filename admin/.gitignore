@@ -11,10 +11,3 @@
 /dist
 /.mfsu
 .swc
-
-
-/admin/node_modules
-/admin/dist
-/admin/.husky
-/admin/src/.umi
-/admin/src/.umi-production
