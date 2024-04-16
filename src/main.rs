@@ -41,7 +41,7 @@ async fn main() {
     let router = router();
     let service: Service = router.into();
     let _cors_handler = cors_middleware();
-    let service = service.catcher(Catcher::default().hoop(_cors_handler).hoop(handle_404)); //.hoop(_cors_handler).hoop(handle_404));
+    let service = service.hoop(_cors_handler).catcher(Catcher::default().hoop(handle_404)); //.hoop(_cors_handler).hoop(handle_404));
     println!("🌪️ {} is starting ", &CFG.server.name);
     println!("🔄 listen on {}", &CFG.server.address);
 

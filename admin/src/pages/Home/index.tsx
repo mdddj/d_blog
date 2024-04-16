@@ -4,6 +4,7 @@ import { PageContainer } from '@ant-design/pro-components';
 import { useModel } from '@umijs/max';
 import styles from './index.less';
 import { Button } from 'antd';
+import React from 'react';
 
 const HomePage: React.FC = () => {
   const { name } = useModel('global');
