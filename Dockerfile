@@ -19,5 +19,7 @@ RUN apk add --no-cache libgcc
 COPY --from=0 /app/target/release/d_blog .
 COPY ./data ./data
 COPY ./config ./config
+COPY ./assets ./assets
+COPY ./logs ./logs
 # set the binary as entrypoint
 ENTRYPOINT ["/d_blog"]
