@@ -346,6 +346,7 @@ mod tests {
             product_category_id: 1,
             shop_user_id: "".to_owned(),
             sku_raw_list: sku_list,
+            price: vec![],
         };
         let json_str = serde_json::to_string(&json_body).unwrap();
         println!("{}", json_str);
