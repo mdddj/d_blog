@@ -1,0 +1,13 @@
+/Users/hlx/github/d_blog/migration/target/debug/deps/libquote-540e839a306ca897.rmeta: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ext.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/format.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ident_fragment.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/to_tokens.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/runtime.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/spanned.rs
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/libquote-540e839a306ca897.rlib: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ext.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/format.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ident_fragment.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/to_tokens.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/runtime.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/spanned.rs
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/quote-540e839a306ca897.d: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ext.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/format.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ident_fragment.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/to_tokens.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/runtime.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/spanned.rs
+
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/lib.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ext.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/format.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/ident_fragment.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/to_tokens.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/runtime.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/quote-1.0.35/src/spanned.rs:

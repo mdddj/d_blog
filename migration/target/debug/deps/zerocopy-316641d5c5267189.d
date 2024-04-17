@@ -1,0 +1,15 @@
+/Users/hlx/github/d_blog/migration/target/debug/deps/libzerocopy-316641d5c5267189.rmeta: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macros.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macro_util.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/post_monomorphization_compile_fail_tests.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/util.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/third_party/rust/layout.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/wrappers.rs
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/libzerocopy-316641d5c5267189.rlib: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macros.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macro_util.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/post_monomorphization_compile_fail_tests.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/util.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/third_party/rust/layout.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/wrappers.rs
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/zerocopy-316641d5c5267189.d: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macros.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macro_util.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/post_monomorphization_compile_fail_tests.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/util.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/third_party/rust/layout.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/wrappers.rs
+
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/lib.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macros.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/macro_util.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/post_monomorphization_compile_fail_tests.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/util.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/third_party/rust/layout.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/zerocopy-0.7.32/src/wrappers.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.7.32

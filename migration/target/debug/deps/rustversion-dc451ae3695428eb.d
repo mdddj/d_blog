@@ -1,0 +1,20 @@
+/Users/hlx/github/d_blog/migration/target/debug/deps/librustversion-dc451ae3695428eb.dylib: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/attr.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/bound.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/constfn.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/date.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/error.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/expand.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/expr.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/iter.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/release.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/time.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/token.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/version.rs /Users/hlx/github/d_blog/migration/target/debug/build/rustversion-af775f011cb4ea16/out/version.expr
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/rustversion-dc451ae3695428eb.d: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/attr.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/bound.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/constfn.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/date.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/error.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/expand.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/expr.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/iter.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/release.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/time.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/token.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/version.rs /Users/hlx/github/d_blog/migration/target/debug/build/rustversion-af775f011cb4ea16/out/version.expr
+
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/lib.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/attr.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/bound.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/constfn.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/date.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/error.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/expand.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/expr.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/iter.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/release.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/time.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/token.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/rustversion-1.0.14/src/version.rs:
+/Users/hlx/github/d_blog/migration/target/debug/build/rustversion-af775f011cb4ea16/out/version.expr:
+
+# env-dep:OUT_DIR=/Users/hlx/github/d_blog/migration/target/debug/build/rustversion-af775f011cb4ea16/out

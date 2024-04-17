@@ -1,0 +1,12 @@
+/Users/hlx/github/d_blog/migration/target/debug/deps/libsqlformat-54693a9befa041c4.rmeta: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/formatter.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/indentation.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/inline_block.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/params.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/tokenizer.rs
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/libsqlformat-54693a9befa041c4.rlib: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/formatter.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/indentation.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/inline_block.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/params.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/tokenizer.rs
+
+/Users/hlx/github/d_blog/migration/target/debug/deps/sqlformat-54693a9befa041c4.d: /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/lib.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/formatter.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/indentation.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/inline_block.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/params.rs /Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/tokenizer.rs
+
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/lib.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/formatter.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/indentation.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/inline_block.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/params.rs:
+/Users/ldd/.cargo/registry/src/rsproxy.cn-0dccff568467c15b/sqlformat-0.2.3/src/tokenizer.rs:
