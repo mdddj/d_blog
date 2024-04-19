@@ -23,3 +23,7 @@ target
 migration/target
 migration/*.lock
 *.lock
+
+/app/.dart_tool
+/app/*.lock
+/app/build
