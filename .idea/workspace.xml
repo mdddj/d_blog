@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb94de4f-d4b6-4c6e-a780-750132af8461" name="更改" comment="添加代码" />
+    <list default="true" id="fb94de4f-d4b6-4c6e-a780-750132af8461" name="更改" comment="Release 0.0.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,44 +66,45 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Cargo.Build `Run d_blog`.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run d_blog.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test d_blog.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test services::post::tests::test_find_blog_by_id.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test services::product_sku_value::test_save_all.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Docker Image (1).executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Docker Image.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile (1).executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.联想docker编译.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;cross-compile&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hlx/github/d_blog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/src/dtos/product_sku_name_value.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects.stats&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/hlx/github/d_blog/admin/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Cargo.Build `Run d_blog`.executor": "Run",
+    "Cargo.Run d_blog.executor": "Run",
+    "Cargo.Test d_blog.executor": "Run",
+    "Cargo.Test services::post::tests::test_find_blog_by_id.executor": "Run",
+    "Cargo.Test services::product_sku_value::test_save_all.executor": "Run",
+    "Docker.Docker Image (1).executor": "Run",
+    "Docker.Docker Image.executor": "Run",
+    "Docker.Dockerfile (1).executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.联想docker编译.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "cross-compile",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hlx/github/d_blog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/src/dtos/product_sku_name_value.rs": "true",
+    "org.rust.first.attach.projects": "true",
+    "org.rust.first.attach.projects.stats": "true",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "/Users/hlx/github/d_blog/admin/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -327,6 +328,7 @@
       <workItem from="1713402099771" duration="3081000" />
       <workItem from="1713409993531" duration="873000" />
       <workItem from="1713410929196" duration="95000" />
+      <workItem from="1713489822222" duration="2064000" />
     </task>
     <task id="LOCAL-00001" summary="Add business logic">
       <option name="closed" value="true" />
@@ -408,7 +410,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713354738373</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add action">
+      <option name="closed" value="true" />
+      <created>1713490557317</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713490557317</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add action">
+      <option name="closed" value="true" />
+      <created>1713490838944</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713490838944</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Release 0.0.1">
+      <option name="closed" value="true" />
+      <created>1713491175082</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713491175082</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +460,9 @@
     </ignored-roots>
     <MESSAGE value="Add business logic" />
     <MESSAGE value="添加代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加代码" />
+    <MESSAGE value="add action" />
+    <MESSAGE value="Release 0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Release 0.0.1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
