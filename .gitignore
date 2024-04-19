@@ -18,3 +18,5 @@
 /admin/.husky
 /admin/src/.umi
 /admin/src/.umi-production
+
+target
