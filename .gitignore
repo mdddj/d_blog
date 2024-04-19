@@ -20,3 +20,6 @@
 /admin/src/.umi-production
 
 target
+migration/target
+migration/*.lock
+*.lock
