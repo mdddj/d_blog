@@ -1,0 +1,80 @@
+Index: .github/workflows/rust-build.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>name: Release\n\npermissions:\n  contents: write\n\non:\n  push:\n    tags:\n      - v[0-9]+.*\n\njobs:\n  create-release:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: taiki-e/create-gh-release-action@v1\n        with:\n          # (optional) Path to changelog.\n          changelog: CHANGELOG.md\n          # (required) GitHub token for creating GitHub Releases.\n          token: ${{ secrets.GITHUB_TOKEN }}\n\n  upload-assets:\n    needs: create-release\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: taiki-e/upload-rust-binary-action@v1\n        with:\n          # (required) Comma-separated list of binary names (non-extension portion of filename) to build and upload.\n          # Note that glob pattern is not supported yet.\n          bin: ...\n          # (required) GitHub token for uploading assets to GitHub Releases.\n          token: ${{ secrets.GITHUB_TOKEN }}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.github/workflows/rust-build.yml b/.github/workflows/rust-build.yml
+--- a/.github/workflows/rust-build.yml	(revision 7189491ceb02316813377f5d3a85947a565f95fc)
++++ b/.github/workflows/rust-build.yml	(date 1713498630613)
+@@ -18,11 +18,20 @@
+           # (optional) Path to changelog.
+           changelog: CHANGELOG.md
+           # (required) GitHub token for creating GitHub Releases.
+-          token: ${{ secrets.GITHUB_TOKEN }}
++          token: ${{ secrets.ACTION_ACCESS }}
+ 
+   upload-assets:
+     needs: create-release
+-    runs-on: ubuntu-latest
++    strategy:
++      matrix:
++        include:
++          - target: x86_64-unknown-linux-gnu
++            os: ubuntu-latest
++          - target: x86_64-apple-darwin
++            os: macos-latest
++          - target: x86_64-pc-windows-msvc
++            os: windows-latest
++    runs-on: ${{ matrix.os }}
+     steps:
+       - uses: actions/checkout@v4
+       - uses: taiki-e/upload-rust-binary-action@v1
+@@ -30,6 +39,19 @@
+           # (required) Comma-separated list of binary names (non-extension portion of filename) to build and upload.
+           # Note that glob pattern is not supported yet.
+           bin: ...
++          # (optional) Target triple, default is host triple.
++          # This is optional but it is recommended that this always be set to
++          # clarify which target you are building for if macOS is included in
++          # the matrix because GitHub Actions changed the default architecture
++          # of macos-latest since macos-14.
++          target: ${{ matrix.target }}
++          # (optional) On which platform to distribute the `.tar.gz` file.
++          # [default value: unix]
++          # [possible values: all, unix, windows, none]
++          tar: unix
++          # (optional) On which platform to distribute the `.zip` file.
++          # [default value: windows]
++          # [possible values: all, unix, windows, none]
++          zip: windows
+           # (required) GitHub token for uploading assets to GitHub Releases.
+-          token: ${{ secrets.GITHUB_TOKEN }}
+-
++          token: ${{ secrets.ACTION_ACCESS }}
+\ No newline at end of file
+Index: CHANGELOG.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+--- a/CHANGELOG.md	(revision 7189491ceb02316813377f5d3a85947a565f95fc)
++++ b/CHANGELOG.md	(date 1713500809436)
+@@ -1,0 +1,14 @@
++# Changelog
++
++All notable changes to this project will be documented in this file.
++
++This project adheres to [Semantic Versioning](https://semver.org).
++
++<!--
++Note: In this file, do not use the hard wrap in the middle of a sentence for compatibility with GitHub comment style markdown rendering.
++-->
++
++## [Unreleased]
++
++## [0.0.3] - 2024-04-19
++- bug fix
+\ No newline at end of file
