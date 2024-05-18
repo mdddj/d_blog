@@ -12,6 +12,8 @@ use salvo::{
 
 //Router::with_path("/api/category").get(get_category_all).post(post_add_category).push(Router::with_path("<id>").put(put_update_category).delete(delete_category))
 
+
+///
 #[endpoint(tags("category"))]
 pub async fn post_add_category(
     new_category: JsonBody<CategoryAddRequest>,

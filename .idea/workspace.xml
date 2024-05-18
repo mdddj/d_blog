@@ -5,10 +5,98 @@
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/migration/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb94de4f-d4b6-4c6e-a780-750132af8461" name="更改" comment="Release 0.0.1">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/rust-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/rust-build.yml" afterDir="false" />
+    <list default="true" id="fb94de4f-d4b6-4c6e-a780-750132af8461" name="更改" comment="更改">
+      <change afterPath="$PROJECT_DIR$/admin/.idea/admin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/dialog.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/components/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/layouts/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/models/response.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/models/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Permission/add.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Permission/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Permission/index.styled-components.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Permission/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Permission/list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Permission/model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Role/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Role/index.styled-components.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/Role/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/User/add.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/User/list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/pages/document.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/utils/core.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/utils/request.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/utils/token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-04-23" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-04-24" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-04-25" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-02" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-14" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-18" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migration/src/m20240502_062735_create_permission_table.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migration/src/m20240502_062809_create_role_table.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migration/src/m20240514_061611_create_role_permission_table.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/permission.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/permission_role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dtos/role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/permission.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/permission_role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/permission.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/permission_role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routers/role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/permission.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/permission_role.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/role.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/d_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d_blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/.umirc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/access.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/app.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/Guide/Guide.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/Guide/Guide.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/components/Guide/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/models/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/Access/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/Home/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/Product/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Product/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/User/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/User/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/demo.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/migration/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/migration/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/src/m20220101_000001_create_table.rs" beforeDir="false" afterPath="$PROJECT_DIR$/migration/src/m20220101_000001_create_table.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/category.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/category.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/user.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/user.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/prelude.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/prelude.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/users.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/users.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/jwt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/jwt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/category.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/category.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/user.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +107,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Rust File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="cross-compile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,53 +158,101 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Cargo.Build `Run d_blog`.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run d_blog.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test d_blog.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test services::post::tests::test_find_blog_by_id.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test services::product_sku_value::test_save_all.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Docker Image (1).executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Docker Image.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile (1).executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.联想docker编译.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;cross-compile&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hlx/github/d_blog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/src/dtos/product_sku_name_value.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects.stats&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/hlx/github/d_blog/admin/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Cargo.Build `Run d_blog`.executor": "Run",
+    "Cargo.Run d_blog.executor": "Run",
+    "Cargo.Test d_blog.executor": "Run",
+    "Cargo.Test services::post::tests::test_find_blog_by_id.executor": "Run",
+    "Cargo.Test services::product_sku_value::test_save_all.executor": "Run",
+    "Docker.Docker Image (1).executor": "Run",
+    "Docker.Docker Image.executor": "Run",
+    "Docker.Dockerfile (1).executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.联想docker编译.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "gitbutler/integration",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hlx/github/d_blog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/migration/src/m20240502_062735_create_permission_table.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/src/dtos/product_sku_name_value.rs": "true",
+    "org.rust.first.attach.projects": "true",
+    "org.rust.first.attach.projects.stats": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "/Users/hlx/github/d_blog/admin/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.联想docker编译">
+  <component name="RunManager" selected="npm.start">
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Run d_blog" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package d_blog --bin d_blog" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run d_blog" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run --package d_blog --bin d_blog" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test d_blog" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="test --workspace" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -156,11 +294,39 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="Docker Image (1)" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="本机 mac">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="hello_rust:latest" />
+          <option name="containerName" value="hello" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="本机 mac">
       <deployment type="docker-image">
         <settings>
           <option name="imageTag" value="d_blog:0.0.1" />
           <option name="containerName" value="testtttt" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="本机 mac">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="d_blog:0.0.1" />
+          <option name="containerName" value="testtttt" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="本机 mac">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="d_blog" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
         </settings>
       </deployment>
       <method v="2" />
@@ -198,6 +364,17 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="联想docker编译" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="联想">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="d_blog" />
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/admin/package.json" />
       <command value="run" />
@@ -209,23 +386,34 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v20.13.1/bin/node" />
+      <package-manager value="pnpm" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Cargo.Run d_blog" />
       <item itemvalue="Cargo.Test d_blog" />
-      <item itemvalue="Docker.联想docker编译" />
-      <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.Docker Image (1)" />
+      <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="Flutter.main.dart" />
+      <item itemvalue="Docker.联想docker编译" />
       <item itemvalue="npm.dev" />
+      <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="Docker.Docker Image (1)" />
-        <item itemvalue="Docker.Docker Image" />
         <item itemvalue="Docker.联想docker编译" />
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.Docker Image" />
       </list>
     </recent_temporary>
   </component>
@@ -236,8 +424,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.21" />
-        <option value="bundled-js-predefined-1d06a55b98c1-3d8cd37a7330-JavaScript-IU-241.15989.21" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -332,6 +520,93 @@
       <workItem from="1713410929196" duration="95000" />
       <workItem from="1713489822222" duration="2064000" />
       <workItem from="1713495081202" duration="2983000" />
+      <workItem from="1713506479403" duration="1310000" />
+      <workItem from="1713519406323" duration="73000" />
+      <workItem from="1713520465776" duration="655000" />
+      <workItem from="1713584499732" duration="911000" />
+      <workItem from="1713747135164" duration="2561000" />
+      <workItem from="1713852198773" duration="1940000" />
+      <workItem from="1713854181623" duration="1096000" />
+      <workItem from="1713855288318" duration="3927000" />
+      <workItem from="1713860400260" duration="118000" />
+      <workItem from="1713865142850" duration="2225000" />
+      <workItem from="1713922705032" duration="2679000" />
+      <workItem from="1713927287558" duration="363000" />
+      <workItem from="1713928984784" duration="163000" />
+      <workItem from="1713941139660" duration="174000" />
+      <workItem from="1713941320916" duration="526000" />
+      <workItem from="1714006989696" duration="521000" />
+      <workItem from="1714009409094" duration="163000" />
+      <workItem from="1714009582356" duration="4839000" />
+      <workItem from="1714014759561" duration="1633000" />
+      <workItem from="1714016769705" duration="2722000" />
+      <workItem from="1714023466703" duration="582000" />
+      <workItem from="1714024160223" duration="604000" />
+      <workItem from="1714025042703" duration="1579000" />
+      <workItem from="1714026631206" duration="1386000" />
+      <workItem from="1714181670753" duration="737000" />
+      <workItem from="1714183658247" duration="452000" />
+      <workItem from="1714184133918" duration="310000" />
+      <workItem from="1714184692238" duration="623000" />
+      <workItem from="1714185342473" duration="1306000" />
+      <workItem from="1714186938904" duration="435000" />
+      <workItem from="1714187394167" duration="1262000" />
+      <workItem from="1714188993818" duration="821000" />
+      <workItem from="1714190117337" duration="885000" />
+      <workItem from="1714195990170" duration="429000" />
+      <workItem from="1714196646655" duration="364000" />
+      <workItem from="1714197048332" duration="1531000" />
+      <workItem from="1714198930335" duration="1809000" />
+      <workItem from="1714201109431" duration="5280000" />
+      <workItem from="1714206783844" duration="805000" />
+      <workItem from="1714208371574" duration="462000" />
+      <workItem from="1714212583731" duration="695000" />
+      <workItem from="1714226776816" duration="1158000" />
+      <workItem from="1714228180769" duration="679000" />
+      <workItem from="1714266468387" duration="550000" />
+      <workItem from="1714267351167" duration="205000" />
+      <workItem from="1714267697473" duration="729000" />
+      <workItem from="1714294849859" duration="323000" />
+      <workItem from="1714296131131" duration="374000" />
+      <workItem from="1714444788453" duration="229000" />
+      <workItem from="1714630156976" duration="3364000" />
+      <workItem from="1714636415585" duration="2951000" />
+      <workItem from="1714989121820" duration="376000" />
+      <workItem from="1715133256293" duration="49000" />
+      <workItem from="1715134788334" duration="617000" />
+      <workItem from="1715137916055" duration="343000" />
+      <workItem from="1715138550838" duration="841000" />
+      <workItem from="1715139470650" duration="7000" />
+      <workItem from="1715140139794" duration="116000" />
+      <workItem from="1715142141962" duration="1778000" />
+      <workItem from="1715148814660" duration="611000" />
+      <workItem from="1715149450108" duration="316000" />
+      <workItem from="1715149786710" duration="330000" />
+      <workItem from="1715150455349" duration="1009000" />
+      <workItem from="1715151489082" duration="844000" />
+      <workItem from="1715152679757" duration="302000" />
+      <workItem from="1715233860269" duration="930000" />
+      <workItem from="1715319765109" duration="747000" />
+      <workItem from="1715321327303" duration="301000" />
+      <workItem from="1715321653730" duration="308000" />
+      <workItem from="1715323203816" duration="12147000" />
+      <workItem from="1715399570156" duration="9752000" />
+      <workItem from="1715413978381" duration="836000" />
+      <workItem from="1715415887335" duration="407000" />
+      <workItem from="1715417534412" duration="308000" />
+      <workItem from="1715419105595" duration="164000" />
+      <workItem from="1715419288335" duration="832000" />
+      <workItem from="1715420722482" duration="222000" />
+      <workItem from="1715421062484" duration="32000" />
+      <workItem from="1715421100617" duration="2827000" />
+      <workItem from="1715481359791" duration="1460000" />
+      <workItem from="1715580719968" duration="946000" />
+      <workItem from="1715666842026" duration="2122000" />
+      <workItem from="1715668990076" duration="5486000" />
+      <workItem from="1716015312259" duration="57000" />
+      <workItem from="1716015375912" duration="89000" />
+      <workItem from="1716015475261" duration="11534000" />
+      <workItem from="1716034052959" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="Add business logic">
       <option name="closed" value="true" />
@@ -445,11 +720,64 @@
       <option name="project" value="LOCAL" />
       <updated>1713492624815</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Release 0.0.1">
+      <option name="closed" value="true" />
+      <created>1713501841258</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713501841258</updated>
+    </task>
+    <task id="LOCAL-00016" summary="a">
+      <option name="closed" value="true" />
+      <created>1713506701425</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713506701425</updated>
+    </task>
+    <task id="LOCAL-00017" summary="b">
+      <option name="closed" value="true" />
+      <created>1713507072093</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713507072093</updated>
+    </task>
+    <task id="LOCAL-00018" summary="更改">
+      <option name="closed" value="true" />
+      <created>1713747465961</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713747465961</updated>
+    </task>
+    <task id="LOCAL-00019" summary="更改">
+      <option name="closed" value="true" />
+      <created>1713747556209</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1713747556209</updated>
+    </task>
+    <task id="LOCAL-00020" summary="更改">
+      <option name="closed" value="true" />
+      <created>1713748360225</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1713748360225</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/admin/src/.umi/core/loaders.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -473,7 +801,10 @@
     <MESSAGE value="添加代码" />
     <MESSAGE value="add action" />
     <MESSAGE value="Release 0.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Release 0.0.1" />
+    <MESSAGE value="a" />
+    <MESSAGE value="b" />
+    <MESSAGE value="更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

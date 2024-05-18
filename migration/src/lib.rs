@@ -12,6 +12,9 @@ mod m20240411_034848_create_product_sku_table;
 mod m20240411_053356_create_product_sku_name_table;
 mod m20240411_053401_create_product_sku_value_table;
 mod m20240411_053408_create_product_sku_name_value_table;
+mod m20240502_062735_create_permission_table;
+mod m20240502_062809_create_role_table;
+mod m20240514_061611_create_role_permission_table;
 
 pub struct Migrator;
 
@@ -31,6 +34,9 @@ impl MigratorTrait for Migrator {
             Box::new(m20240411_053356_create_product_sku_name_table::Migration),
             Box::new(m20240411_053401_create_product_sku_value_table::Migration),
             Box::new(m20240411_053408_create_product_sku_name_value_table::Migration),
+            Box::new(m20240502_062735_create_permission_table::Migration),
+            Box::new(m20240502_062809_create_role_table::Migration),
+            Box::new(m20240514_061611_create_role_permission_table::Migration),
         ]
     }
 }

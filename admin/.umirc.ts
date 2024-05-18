@@ -1,16 +1,6 @@
-import { defineConfig } from "@umijs/max";
+import { defineConfig } from "umi";
 
 export default defineConfig({
-  antd: {},
-  access: {},
-  model: {},
-  initialState: {},
-  request: {
-    dataField: 'data'
-  },
-  layout: {
-    title: "@umijs/max",
-  },
   routes: [
     {
       path: "/",
@@ -20,11 +10,6 @@ export default defineConfig({
       name: "首页",
       path: "/home",
       component: "./Home",
-    },
-    {
-      name: "权限演示",
-      path: "/access",
-      component: "./Access",
     },
     {
       name: "用户管理",
@@ -37,18 +22,32 @@ export default defineConfig({
       component: "./Product"
     },
     {
+      name: "角色",
+      path: "/role",
+      component: "./Role"
+    },
+    {
       name: "登录",
       layout: false,
       path: "/user/login",
       component: "./Login",
+    }, {
+      name: "权限管理",
+      path: '/permission',
+      component: './Permission'
     }
   ],
   npmClient: "pnpm",
-  tailwindcss: {},
   proxy: {
     '/api': {
       'target': 'http://127.0.0.1:5800/api/',
       'changeOrigin': true,
     },
   },
+  tailwindcss: {
+    tailwindCssFilePath: 'tailwind.css',
+    tailwindConfigFilePath: "tailwind.config.js",
+  },
+  plugins: ["@umijs/plugins/dist/tailwindcss"],
+  clientLoader: {}
 });

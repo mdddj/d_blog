@@ -4,6 +4,8 @@ pub mod prelude;
 
 pub mod category;
 pub mod exception;
+pub mod permission;
+pub mod permission_role;
 pub mod post;
 pub mod post_tag;
 pub mod product;
@@ -12,5 +14,6 @@ pub mod product_sku;
 pub mod product_sku_name;
 pub mod product_sku_name_value;
 pub mod product_sku_value;
+pub mod role;
 pub mod tag;
 pub mod users;

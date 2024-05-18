@@ -8,3 +8,6 @@ pub mod product_sku;
 pub mod product_sku_value;
 pub mod product_sku_name_value;
 pub mod product_sku_name;
+pub mod permission;
+pub mod role;
+pub mod permission_role;
