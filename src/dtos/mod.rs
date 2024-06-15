@@ -12,3 +12,4 @@ pub mod product_sku_name_value;
 pub mod permission;
 pub mod role;
 pub mod permission_role;
+pub mod user_role;

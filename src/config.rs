@@ -1,6 +1,7 @@
 use once_cell::sync::Lazy;
 use serde::Deserialize;
 use std::{fs::File, io::Read, path::Path};
+use salvo::oapi::swagger_ui::Url;
 
 #[derive(Debug, Deserialize)]
 pub struct Configs {
@@ -9,6 +10,7 @@ pub struct Configs {
     pub database: DataBase,
     pub cert: Cert,
     pub jwt: Jwt,
+    pub auth: Auth
 }
 
 #[derive(Debug, Deserialize)]
@@ -47,9 +49,16 @@ pub struct Cert {
     pub key: String,
 }
 
+
+#[derive(Debug,Deserialize)]
+pub struct Auth {
+    ///对这些URL进行放行
+    pub ig_urls: Vec<String>
+}
+
 const CONFIG_FILE: &str = "config/config.yml";
 
-pub static CFG: Lazy<Configs> = Lazy::new(self::Configs::init);
+pub static CFG: Lazy<Configs> = Lazy::new(Configs::init);
 
 impl Configs {
     pub fn init() -> Self {
@@ -69,6 +78,13 @@ impl Configs {
             Ok(c) => c,
             Err(e) => panic!("Failed to parse configuration file, error message:{}", e),
         }
+    }
+}
+
+impl Auth {
+    pub fn is_match(&self,url: &str,method: &str) -> bool {
+        let target = format!("{}:{}",method,url);
+        self.ig_urls.contains(&target)
     }
 }
 pub static CERT_KEY: Lazy<CertKey> = Lazy::new(get_cert_key);

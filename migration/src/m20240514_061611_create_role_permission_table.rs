@@ -26,7 +26,7 @@ impl MigrationTrait for Migration {
                     .foreign_key(ForeignKeyCreateStatement::new().name("fk_permission").from(
                         PermissionRole::Table, PermissionRole::PermissionId,
                     ).to(Permission::Table, Permission::Id).on_delete(ForeignKeyAction::Cascade))
-                    .foreign_key(ForeignKeyCreateStatement::new().name("fk_role").from(PermissionRole::Table, PermissionRole::RoleId).to(Role::Table, Role::Id).on_delete(ForeignKeyAction::Cascade))
+                    .foreign_key(ForeignKeyCreateStatement::new().name("fk_role").from(PermissionRole::Table, PermissionRole::RoleId).to(Role::Table, Role::Id))
                     .to_owned(),
             )
             .await

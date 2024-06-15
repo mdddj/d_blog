@@ -14,4 +14,5 @@ pub use super::product_sku_name_value::Entity as ProductSkuNameValue;
 pub use super::product_sku_value::Entity as ProductSkuValue;
 pub use super::role::Entity as Role;
 pub use super::tag::Entity as Tag;
+pub use super::user_role::Entity as UserRole;
 pub use super::users::Entity as Users;

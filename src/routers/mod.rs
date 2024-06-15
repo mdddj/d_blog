@@ -12,6 +12,7 @@ use salvo::{
 use crate::routers::permission::{delete_permission, get_permission_all, post_add_permission, put_update_permission};
 use crate::routers::permission_role::{get_all_roles, get_role_by_id, post_add_permission_role};
 use crate::routers::user::{get_user_by_token_api, set_current_user_hook};
+use crate::routers::user_role::{delete_user_role, get_user_role_by_user_id, post_add_user_role};
 
 use self::{
     category::*,
@@ -28,10 +29,11 @@ pub mod user;
 pub mod permission;
 pub mod role;
 pub mod permission_role;
+pub mod user_role;
 
 pub fn router() -> Router {
     let exception_routers = Router::with_path("/api/exception").post(post_add_exception);
-
+    let user_role_routers = Router::with_path("/api/user_role").post(post_add_user_role).push(Router::with_path("<id>").delete(delete_user_role).get(get_user_role_by_user_id));
     let permission_routers = Router::with_path("/api/permission")
         .hoop(set_current_user_hook)
         .get(get_permission_all).post(post_add_permission).push(Router::with_path("<id>").put(put_update_permission).delete(delete_permission));
@@ -95,12 +97,12 @@ pub fn router() -> Router {
                 .put(put_update_user)
                 .delete(delete_user),
         ).push(
-        Router::with_path("/curr")
+        Router::with_path("curr")
             .get(get_user_by_token_api)
     );
 
 
-    let mut need_auth_routers = vec![user_router, permission_routers, role_add_routers];
+    let mut need_auth_routers = vec![user_router, permission_routers, role_add_routers, user_role_routers];
 
 
     let router = Router::new()

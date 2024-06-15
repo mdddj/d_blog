@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .my-input {
+        @apply input input-bordered
+    }
+    .my-form {
+        @apply flex flex-col gap-5
+    }
+    .submit-btn {
+        @apply btn btn-primary
+    }
+}

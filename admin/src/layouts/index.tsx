@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useClientLoaderData } from '@@/exports';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react';
 import React, { Fragment } from 'react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { configure } from 'axios-hooks';
@@ -7,43 +7,45 @@ import axiosInstance from '@/utils/request';
 import { Toaster } from 'react-hot-toast';
 import { ApiResponse } from '@/models/response';
 import { User } from '@/models/user';
+import '../app.css'
 
-configure({axios: axiosInstance})
+configure({ axios: axiosInstance });
 
 const user = {
   name: 'Tom Cook',
   email: 'tom@example.com',
   imageUrl:
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-}
+};
 const navigation = [
-  { name: '首页', href: '/home'},
+  { name: '首页', href: '/home' },
   { name: '用户', href: '/user' },
   { name: '权限', href: '/permission' },
   { name: '角色', href: '/role' },
-]
+  { name: '博客', href: '/post' },
+];
 const userNavigation = [
   { name: '个人信息', href: '#' },
   { name: '设置', href: '#' },
   { name: '退出登录', href: '#' },
-]
+];
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
 
 export async function clientLoader() {
-  const {data: {data}} = await axiosInstance.get<ApiResponse<User>>("/api/users/curr");
-  return data
+  const { data: { data } } = await axiosInstance.get<ApiResponse<User>>('/api/users/curr');
+  return data;
 }
 
-export default function Example() {
+export default function BaseLayout() {
 
 
-  let {data} = useClientLoaderData()
+  let { data } = useClientLoaderData();
 
-  console.log(data)
+  console.log(data);
 
   return (
     <>
@@ -63,11 +65,11 @@ export default function Example() {
                           <NavLink
                             key={item.name}
                             to={item.href}
-                            className={({isActive})=> classNames(
+                            className={({ isActive }) => classNames(
                               isActive
                                 ? 'bg-gray-900 text-white'
                                 : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                              'rounded-md px-3 py-2 text-sm font-medium',
                             )}
                           >
                             {item.name}
@@ -81,12 +83,14 @@ export default function Example() {
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
-                          <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                          <MenuButton
+                            className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span>
                             <img className="h-8 w-8 rounded-full" src={data?.avatar} alt="" />
-                            <span className={'text-neutral-content ml-2'}>{data?.nick_name ?? `${data?.username}`}</span>
-                          </Menu.Button>
+                            <span
+                              className={'text-neutral-content ml-2'}>{data?.nick_name ?? `${data?.username}`}</span>
+                          </MenuButton>
                         </div>
                         <Transition
                           as={Fragment}
@@ -97,30 +101,32 @@ export default function Example() {
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
                         >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <MenuItems
+                            className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             {userNavigation.map((item) => (
-                              <Menu.Item key={item.name}>
-                                {({ active }) => (
+                              <MenuItem key={item.name}>
+                                {({ focus }) => (
                                   <a
                                     href={item.href}
                                     className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
+                                      focus ? 'bg-gray-100' : '',
+                                      'block px-4 py-2 text-sm text-gray-700',
                                     )}
                                   >
                                     {item.name}
                                   </a>
                                 )}
-                              </Menu.Item>
+                              </MenuItem>
                             ))}
-                          </Menu.Items>
+                          </MenuItems>
                         </Transition>
                       </Menu>
                     </div>
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <DisclosureButton
+                      className="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-0.5" />
                       <span className="sr-only">Open main menu</span>
                       {open ? (
@@ -128,12 +134,12 @@ export default function Example() {
                       ) : (
                         <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                       )}
-                    </Disclosure.Button>
+                    </DisclosureButton>
                   </div>
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden">
+              <DisclosurePanel className="md:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                 </div>
                 <div className="border-t border-gray-700 pb-3 pt-4">
@@ -156,18 +162,18 @@ export default function Example() {
                   </div>
                   <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
-                      <Disclosure.Button
+                      <DisclosureButton
                         key={item.name}
                         as="a"
                         href={item.href}
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                       >
                         {item.name}
-                      </Disclosure.Button>
+                      </DisclosureButton>
                     ))}
                   </div>
                 </div>
-              </Disclosure.Panel>
+              </DisclosurePanel>
             </>
           )}
         </Disclosure>
@@ -179,11 +185,11 @@ export default function Example() {
         </header>
         <main>
           <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-            <Outlet/>
+            <Outlet />
           </div>
         </main>
       </div>
       <Toaster />
     </>
-  )
+  );
 }

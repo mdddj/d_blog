@@ -11,6 +11,7 @@ use salvo::prelude::*;
 use salvo::server::ServerHandle;
 use tokio::signal;
 use tracing::info;
+use crate::services::permission::init_permission_init_all;
 
 mod app_error;
 mod app_writer;
@@ -22,6 +23,7 @@ mod middleware;
 mod routers;
 mod services;
 mod utils;
+mod extends;
 
 #[tokio::main]
 async fn main() {
@@ -64,6 +66,7 @@ async fn main() {
             let handle = server.handle();
             tokio::spawn(shutdown_signal(handle));
             tokio::spawn(check_and_init_admin_user());
+            tokio::spawn(init_permission_init_all());
             server.serve(service).await;
         }
         false => {
@@ -76,6 +79,7 @@ async fn main() {
             let handle = server.handle();
             tokio::spawn(shutdown_signal(handle));
             tokio::spawn(check_and_init_admin_user());
+            tokio::spawn(init_permission_init_all());
             server.serve(service).await;
         }
     }

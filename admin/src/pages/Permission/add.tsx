@@ -1,32 +1,40 @@
 import { Permission } from './model';
 import useAxios from 'axios-hooks';
-import React, { JSX } from 'react';
+import React, { useEffect } from 'react';
 import { Dialog, DialogActions, DialogBody, DialogCloseBtn, DialogTitle } from '@/components/dialog';
 import {
   Controller, useForm,
 } from 'react-hook-form';
 import { get_input_class, get_textarea_class, InputWrapper } from '@/components/form';
+import { closeDialogById, defaultToastMsg, showDialogById } from '@/utils/core';
+import { ButtonLoading } from '@/components/button_loading';
+import toast from 'react-hot-toast';
 
 
 type Prop = {
-  trigger?: JSX.Element | undefined;
   initValues?: Permission | undefined;
+  onCancel?: () => void;
 };
 
 
 const AddOrUpdateFormByPermission: React.FC<Prop> = (props) => {
-  const { register, handleSubmit, reset, control, watch } = useForm<Permission>({defaultValues: {
-    type: 'URL'
-    }});
+  const { register, handleSubmit, reset, control, watch, formState: { isLoading } } = useForm<Permission>({
+    defaultValues: {
+      type: 'URL',
+      ...props.initValues,
+    },
+  });
 
   let isUpdate = props.initValues !== undefined;
-  const [{}, execPost] = useAxios({ url: '/api/permission', method: 'POST' }, { manual: true });
-  const [{}, execPut] = useAxios({ method: 'PUT' }, { manual: true });
+  const [_, execPost] = useAxios({ url: '/api/permission', method: 'POST' }, { manual: true });
+  const [__, execPut] = useAxios({ method: 'PUT' }, { manual: true });
 
+  //添加
   async function apiPermissionAdd(data: Permission): Promise<any> {
     return execPost({ data });
   }
 
+  //修改
   async function apiPermissionUpdate(id: number, data: Permission): Promise<any> {
     return execPut({ url: `/api/permission/${id}`, data });
   }
@@ -36,33 +44,45 @@ const AddOrUpdateFormByPermission: React.FC<Prop> = (props) => {
   const onFinish = async (values: Permission) => {
     let model = props.initValues;
     if (isUpdate && model && model.id) {
-      await apiPermissionUpdate(model.id, values);
+      await toast.promise(apiPermissionUpdate(model.id, values), defaultToastMsg(closeDialog))
     } else {
-      await apiPermissionAdd(values);
+      await toast.promise(apiPermissionAdd(values),defaultToastMsg(closeDialog));
     }
-    return true;
   };
 
   const type = watch('type');
 
-  console.log(type);
 
-  let getUrlLabel = (): string => {
-    switch (type){
-      case "URL" : {
-        return "URL"
-      }
-      case "PAGE": {
-        return "输入页面URL"
-      }
-      case "REGEX" : {
-        return "输入正则表达式"
-      }
-    }
+  const closeDialog = () => {
+    reset()
+    closeDialogById('permission-add-dialog');
   }
 
+  let getUrlLabel = (): string => {
+    switch (type) {
+      case 'URL' : {
+        return 'URL';
+      }
+      case 'PAGE': {
+        return '输入页面URL';
+      }
+      case 'REGEX' : {
+        return '输入正则表达式';
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (props.initValues) {
+      showDialogById('permission-add-dialog');
+    }
+  }, [props.initValues]);
+
   return (
-    <Dialog id={'permission-add-dialog'} onClose={() => reset()}>
+    <Dialog id={'permission-add-dialog'} onClose={() => {
+      reset();
+      props.onCancel?.();
+    }}>
       <DialogBody>
         <DialogTitle title={'添加权限'} />
         <form className={'flex flex-col gap-4'} onSubmit={handleSubmit(onFinish)}>
@@ -100,7 +120,7 @@ const AddOrUpdateFormByPermission: React.FC<Prop> = (props) => {
             </InputWrapper>;
           }} name={'type'} control={control} />
 
-          <Controller  disabled={type === 'PAGE'} render={function({ field, fieldState: { error } }) {
+          <Controller disabled={type === 'PAGE'} render={function({ field, fieldState: { error } }) {
             return <InputWrapper label={'方法'} bottomLeftLabel={error?.message}>
               <select  {...field} {...register('method')} className="select select-bordered w-full">
                 <option value={''} disabled defaultChecked={true}>请选择Method</option>
@@ -126,7 +146,9 @@ const AddOrUpdateFormByPermission: React.FC<Prop> = (props) => {
             </InputWrapper>;
           }} name={'description'} control={control} rules={{ required: '请输入内容' }} />
           <DialogActions>
-            <button type={'submit'} className={'btn btn-primary'}>添加</button>
+            <button type={'submit'} className={'btn btn-primary'}>
+              {isLoading && <ButtonLoading />}
+              {props.initValues ? '修改' : '新增'}</button>
           </DialogActions>
         </form>
 

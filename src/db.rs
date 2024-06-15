@@ -17,3 +17,10 @@ pub async fn init_db_conn() {
     })
     .await;
 }
+
+pub fn get_db() -> &'static DatabaseConnection {
+    let db = DB
+        .get()
+        .ok_or(anyhow::anyhow!("Database connection failed."));
+    db.expect("打开数据库错误")
+}

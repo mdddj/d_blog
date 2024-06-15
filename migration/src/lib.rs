@@ -15,6 +15,8 @@ mod m20240411_053408_create_product_sku_name_value_table;
 mod m20240502_062735_create_permission_table;
 mod m20240502_062809_create_role_table;
 mod m20240514_061611_create_role_permission_table;
+mod m20240530_024344_user_roles;
+mod m20240615_073331_add_can_delete_column_to_role_table;
 
 pub struct Migrator;
 
@@ -37,6 +39,8 @@ impl MigratorTrait for Migrator {
             Box::new(m20240502_062735_create_permission_table::Migration),
             Box::new(m20240502_062809_create_role_table::Migration),
             Box::new(m20240514_061611_create_role_permission_table::Migration),
+            Box::new(m20240530_024344_user_roles::Migration),
+            Box::new(m20240615_073331_add_can_delete_column_to_role_table::Migration),
         ]
     }
 }

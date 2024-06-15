@@ -16,4 +16,5 @@ pub mod product_sku_name_value;
 pub mod product_sku_value;
 pub mod role;
 pub mod tag;
+pub mod user_role;
 pub mod users;

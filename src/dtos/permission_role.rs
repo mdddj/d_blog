@@ -37,6 +37,8 @@ pub struct NewRolePermissionParam {
     ///权限列表
     pub permission_ids: Vec<i32>,
     ///备注
-    pub description: Option<String>
+    pub description: Option<String>,
+    ///是否能删除
+    pub can_delete: Option<bool>
 
 }

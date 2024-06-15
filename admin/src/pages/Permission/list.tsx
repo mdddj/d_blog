@@ -2,10 +2,12 @@ import React from 'react';
 import useAxios from 'axios-hooks';
 import { ApiResponse } from '@/models/response';
 import { Permission } from '@/pages/Permission/model';
+import { AddOrUpdateFormByPermission } from '@/pages/Permission/add';
 
 
 const PermissionListTable: React.FC = () => {
 
+  const [updatePermission, setUpdatePermission] = React.useState<Permission|undefined>(undefined)
   const [{data,loading}] = useAxios<ApiResponse<Permission[]>>({url: "/api/permission", method: 'GET'});
 
   return <table className={'table table-striped'}>
@@ -35,13 +37,21 @@ const PermissionListTable: React.FC = () => {
           <th>{item.description}</th>
           <th>
             <div className={'inline-flex gap-2'}>
-              <button className={'btn btn-error btn-sm'}>删除</button>
+              <button className={'btn'} onClick={()=>{
+                setUpdatePermission(item)
+              }}>编辑</button>
+              <button className={'btn btn-warning'}>删除</button>
             </div>
           </th>
         </tr>
       })
     }
     </tbody>
+    {
+      updatePermission && <AddOrUpdateFormByPermission initValues={updatePermission} onCancel={() => {
+        setUpdatePermission(undefined);
+      }} />
+    }
   </table>
 }
 export default PermissionListTable;

@@ -10,17 +10,28 @@ pub struct Model {
     pub id: i32,
     pub name: String,
     pub description: Option<String>,
+
+    //是否能删除
+    pub can_delete: Option<bool>,
 }
 
 #[derive(Copy, Clone, Debug, EnumIter, DeriveRelation)]
 pub enum Relation {
     #[sea_orm(has_many = "super::permission_role::Entity")]
     PermissionRole,
+    #[sea_orm(has_many = "super::user_role::Entity")]
+    UserRole,
 }
 
 impl Related<super::permission_role::Entity> for Entity {
     fn to() -> RelationDef {
         Relation::PermissionRole.def()
+    }
+}
+
+impl Related<super::user_role::Entity> for Entity {
+    fn to() -> RelationDef {
+        Relation::UserRole.def()
     }
 }
 

@@ -1,4 +1,4 @@
-let MOOSE_REACT_LEARN_ACCESS_TOKEN = 'token';
+export let MOOSE_REACT_LEARN_ACCESS_TOKEN = 'token';
 // 保存
 export const saveAccessToken = (token: string) => {
   localStorage.setItem(MOOSE_REACT_LEARN_ACCESS_TOKEN, token);

@@ -1,13 +1,12 @@
 use sea_orm::{ActiveModelTrait, EntityTrait, NotSet, Set};
 
 use crate::{app_writer::AppResult, db::DB, dtos::post::*, entities::*};
+use crate::db::get_db;
 use crate::dtos::category::CategoryResponse;
-use crate::entities::prelude::Post;
+use crate::entities::prelude::{Category, Post};
 
 pub async fn add_post(req: PostAddRequest) -> AppResult<PostResponse> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
     let model = post::ActiveModel {
         id: NotSet,
         title: Set(req.title.clone()),
@@ -60,21 +59,15 @@ pub async fn delete_post(id: i32) -> AppResult<()> {
 }
 
 pub async fn post_find_all() -> AppResult<Vec<PostResponse>> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
-    let post = Post::find().all(db).await?;
-    let res = post
-        .into_iter()
-        .map(|r| PostResponse {
-            id: r.id,
-            title: r.title,
-            content: r.content,
-            category_id: r.category_id,
-            category: None,
-        })
-        .collect::<Vec<_>>();
-    Ok(res)
+    let db = get_db();
+
+    let test: Vec<(post::Model, Vec<category::Model>)> = Post::find().find_with_related(Category).all(db).await?;
+    let map: Vec<PostResponse> = test.iter().map(|(p, cs)| {
+        let mut post: PostResponse = p.into();
+        post.category = Some(cs.get(0).unwrap().into());
+        post
+    }).collect();
+    Ok(map)
 }
 
 ///使用ID查询博客
@@ -95,9 +88,9 @@ pub async fn find_blog_by_id(id: i32) -> AppResult<PostResponse> {
                 title: blog.title,
                 content: blog.content,
                 category_id: blog.category_id,
-                category: Some(CategoryResponse{
+                category: Some(CategoryResponse {
                     id: cate.id,
-                    name: cate.name
+                    name: cate.name,
                 }),
             })
         }

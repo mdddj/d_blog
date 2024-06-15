@@ -6,16 +6,18 @@ use crate::{
     dtos::permission_role::*,
     entities::*,
 };
+use crate::db::get_db;
 use crate::dtos::permission_role::*;
 use crate::dtos::role::RoleAddRequest;
-use crate::entities::prelude::PermissionRole;
+use crate::entities::permission_role::ActiveModel;
+use crate::entities::prelude::{PermissionRole, Role};
 use crate::services::role::add_role;
 
 pub async fn add_permission_role(req: PermissionRoleAddRequest) -> AppResult<PermissionRoleResponse> {
     let db = DB
         .get()
         .ok_or(anyhow::anyhow!("Database connection failed."))?;
-    let model = permission_role::ActiveModel {
+    let model = ActiveModel {
         id: NotSet,
         permission_id: Set(req.permission_id.clone()),
         role_id: Set(req.role_id.clone()),
@@ -39,7 +41,7 @@ pub async fn update_permission_role(req: PermissionRoleUpdateRequest) -> AppResu
     if find.is_none() {
         return Err(anyhow::anyhow!("PermissionRole does not exist.").into());
     }
-    let mut model: permission_role::ActiveModel = find.unwrap().into();
+    let mut model: ActiveModel = find.unwrap().into();
 
     model.permission_id = Set(req.permission_id);
     model.role_id = Set(req.role_id);
@@ -86,20 +88,27 @@ pub async fn permission_role_find_all() -> AppResult<Vec<PermissionRoleResponse>
 
 ///添加一个角色
 pub async fn add_new_role(req: NewRolePermissionParam) -> AppResult<i32> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
-    let new_role = add_role(RoleAddRequest { name: req.name.clone(), description: req.description }).await.unwrap();
+    let db = get_db();
+
+    let new_role = add_role(RoleAddRequest { name: req.name.clone(), description: req.description, can_delete: req.can_delete }).await.unwrap();
     let role_id = new_role.id;
-    let mk_models: Vec<permission_role::ActiveModel> = req.permission_ids.iter().map(|x| {
-        permission_role::ActiveModel {
+
+    let mk_models: Vec<ActiveModel> = req.permission_ids.iter().map(|x| {
+        ActiveModel {
             id: NotSet,
             permission_id: Set(x.clone()),
             role_id: Set(role_id),
             notes: Set(None),
         }
     }).collect();
-    PermissionRole::insert_many(mk_models).exec(db).await?;
+    let inset_permission = PermissionRole::insert_many(mk_models).exec(db).await;
+    match inset_permission {
+        Ok(_) => {}
+        Err(_) => {
+            //删除role
+            Role::delete_by_id(role_id).exec(db).await?;
+        }
+    }
     Ok(role_id)
 }
 
@@ -112,7 +121,7 @@ pub async fn find_role_permission_list(role_id: i32) -> AppResult<Vec<permission
     let all_list = PermissionRole::find().filter(
         permission_role::Column::RoleId.eq(role_id)
     ).all(db).await.unwrap();
-    let ids : Vec<i32>= all_list.iter().map(|x| x.permission_id).collect();
+    let ids: Vec<i32> = all_list.iter().map(|x| x.permission_id).collect();
     let find: Vec<permission::Model> = permission::Entity::find().filter(permission::Column::Id.is_in(ids)).all(db).await?;
     Ok(find)
 }

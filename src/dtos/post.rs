@@ -2,6 +2,8 @@ use crate::dtos::category::CategoryResponse;
 use salvo::prelude::{Extractible, ToSchema};
 use serde::{Deserialize, Serialize};
 use validator::Validate;
+use crate::entities::category;
+use crate::entities::post::Model;
 
 ///添加博客模型
 #[derive(Deserialize, Debug, Validate, ToSchema, Default)]
@@ -46,3 +48,19 @@ pub struct PostResponse {
     ///分类模型
     pub category: Option<CategoryResponse>,
 }
+
+
+
+
+impl Into<PostResponse> for &Model {
+    fn into(self) -> PostResponse {
+        return PostResponse {
+            id: self.id,
+            title: self.title.clone(),
+            content: self.content.clone(),
+            category_id: self.category_id,
+            category: None,
+        }
+    }
+}
+

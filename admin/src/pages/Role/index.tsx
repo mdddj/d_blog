@@ -6,10 +6,11 @@ import { closeDialogById, defaultToastMsg, showDialogById } from '@/utils/core';
 import { ApiResponse } from '@/models/response';
 import { Permission } from '@/pages/Permission/model';
 import toast from 'react-hot-toast';
+import RoleTableList from './list';
 
 export default function Page() {
 
-  const [{ data: allRoles, loading }] = useAxios({ url: '/api/permission_role' });
+
   const [{ data: permissionResult }] = useAxios<ApiResponse<Permission[]>>({ url: '/api/permission' });
   const [{ loading: addLoading }, doPostAdd] = useAxios<ApiResponse<number>>({
     url: '/api/permission_role', method: 'POST',
@@ -18,10 +19,6 @@ export default function Page() {
   const [selectPermission, setSelectPermission] = useState<Permission[]>([]);
 
   let pList: Permission[] = permissionResult?.data ?? [];
-
-  if (loading) {
-    return <Loading />;
-  }
 
 
   //显示添加角色弹窗
@@ -62,6 +59,12 @@ export default function Page() {
   return (
     <div>
       <button onClick={showAddDialog} className={'btn btn-primary'}>添加角色</button>
+
+      <RoleTableList />
+
+
+
+
       <Dialog id={'add-role-dialog'}>
         <DialogBody>
           <DialogTitle title={'添加角色'} />

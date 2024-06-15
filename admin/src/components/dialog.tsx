@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 
-const Dialog: React.FC<React.PropsWithChildren<{id: string,onClose?: ()=>void}>> = ({
-                                                     children,
-  id,onClose
-                                                   }) => {
+const SimpleDialog: React.FC<PropsWithChildren<{ id: string, title: string }>> = (props) => {
+  return <Dialog id={props.id}>
+    <DialogBody>
+      <DialogTitle title={props.title} />
+      {props.children}
+    </DialogBody>
+    <DialogCloseBtn />
+  </Dialog>;
+};
+
+const Dialog: React.FC<React.PropsWithChildren<{ id: string, onClose?: () => void }>> = ({
+                                                                                           children,
+                                                                                           id, onClose,
+                                                                                         }) => {
   return <dialog id={id} className={'modal'} onClose={onClose}>
     {children}
   </dialog>;
@@ -27,14 +37,15 @@ const DialogBody: React.FC<React.PropsWithChildren> = ({ children }) => {
 };
 
 
-const DialogActions: React.FC<React.PropsWithChildren> = ({children}) => {
-  return <div className={'modal-action'}>{children}</div>
-}
+const DialogActions: React.FC<React.PropsWithChildren> = ({ children }) => {
+  return <div className={'modal-action'}>{children}</div>;
+};
 
 export {
   Dialog,
   DialogTitle,
   DialogCloseBtn,
   DialogBody,
-  DialogActions
+  DialogActions,
+  SimpleDialog
 };

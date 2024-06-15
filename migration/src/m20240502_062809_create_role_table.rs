@@ -6,6 +6,10 @@ pub struct Migration;
 #[async_trait::async_trait]
 impl MigrationTrait for Migration {
     async fn up(&self, manager: &SchemaManager) -> Result<(), DbErr> {
+
+
+
+
         manager
             .create_table(
                 Table::create()
@@ -38,4 +42,5 @@ pub enum Role {
     Id,
     Name,
     Description,
+    CanDelete
 }

@@ -57,6 +57,10 @@ export function get_textarea_class(error: string | undefined) : string {
   return error ? 'textarea w-full textarea-error textarea-bordered ' : 'textarea w-full textarea-bordered'
 }
 
+export function get_select_class(error: string | undefined) : string {
+  return error ? 'select w-full input-error select-bordered ' : 'select w-full select-bordered'
+}
+
 export {
   InputWrapper,
 };

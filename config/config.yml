@@ -24,3 +24,7 @@ log:
   directory: "./logs"
   file_name: "my-service.log"
   rolling: "daily"            # Available options: "minutely", "hourly", "daily", "never"
+
+auth:
+  ig_urls:
+    - "GET:/api/users/curr"

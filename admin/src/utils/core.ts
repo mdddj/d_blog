@@ -16,14 +16,33 @@ export function closeDialogById(id: string) {
   }
 }
 
-export function defaultToastMsg(): {
+export function defaultToastMsg(success?:()=>void): {
   loading: Renderable;
   success: ValueOrFunction<Renderable, any>;
   error: ValueOrFunction<Renderable, any>;
 } {
   return {
     loading: '正在处理',
-    success: '处理成功',
+    success: () => {
+      success?.()
+      return '处理成功'
+    },
     error: arg => `处理失败:${arg}`,
   };
+}
+
+
+export class MyDialog {
+  id: string
+  constructor(id: string) {
+    this.id = id
+  }
+
+  show = () => {
+    showDialogById(this.id)
+  }
+
+  close = () => {
+    closeDialogById(this.id)
+  }
 }

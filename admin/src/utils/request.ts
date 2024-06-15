@@ -1,6 +1,7 @@
 // 创建 Axios 实例
 import Axios, { AxiosError, AxiosResponse } from 'axios';
-import { getAccessToken,  } from '@/utils/token';
+import { removeAccessToken } from './token';
+import { getAccessToken, } from '@/utils/token';
 
 interface ResponseBase {
   code: number,
@@ -14,9 +15,9 @@ const axiosInstance = Axios.create({
 
 // 响应拦截器
 axiosInstance.interceptors.response.use(
-  (response : AxiosResponse<ResponseBase>) => {
+  (response: AxiosResponse<ResponseBase>) => {
     console.log(response)
-    const {data : {msg,code},status,statusText} = response
+    const { data: { msg }, status } = response
     if (status !== 200) {
       throw new BizException(msg)
     }
@@ -24,14 +25,15 @@ axiosInstance.interceptors.response.use(
   },
   (error: AxiosError<ResponseBase>) => {
     const response = error.response
-    if(response){
-      const {status,statusText,data: {code,msg}} = response
-      if(status === 401 || status === 403) {
+    if (response) {
+      const { status, statusText, data: { code, msg } } = response
+      if (status === 403 || status === 401) {
+        removeAccessToken();
         window.location.href = "/user/login"
         return
       }
-      if(status !== 200 && code !== 0) {
-        let fullMsg =  `${statusText}:${msg}`
+      if (status !== 200 && code !== 0) {
+        let fullMsg = `${statusText}:${msg}`
         return Promise.reject(fullMsg)
       }
     }

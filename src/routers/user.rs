@@ -1,3 +1,5 @@
+use crate::middleware::jwt::JwtClaims;
+use crate::services::user::get_user_info_by_token;
 use crate::{
     app_writer::{AppResult, AppWriter},
     dtos::user::{
@@ -5,15 +7,17 @@ use crate::{
     },
     services::user,
 };
-use salvo::{Depot, handler, Response, Writer};
+use salvo::http::StatusCode;
+use salvo::jwt_auth::{JwtAuthDepotExt, JwtAuthState};
+use salvo::{handler, Depot, Response, Writer};
 use salvo::{
     oapi::endpoint,
     oapi::extract::{JsonBody, PathParam},
     Request,
 };
-use salvo::jwt_auth::{JwtAuthDepotExt, JwtAuthState};
-use crate::middleware::jwt::JwtClaims;
-use crate::services::user::get_user_info_by_token;
+use tracing::info;
+use crate::config::CFG;
+use crate::extends::depot::{DepotEx};
 
 #[endpoint(tags("comm"))]
 pub async fn post_login(req: JsonBody<UserLoginRequest>) -> AppWriter<UserLoginResponse> {
@@ -57,22 +61,18 @@ pub async fn get_user_by_token_api(depot: &mut Depot) -> AppWriter<UserResponse>
             let data = depot.jwt_auth_data::<JwtClaims>().unwrap();
             get_user_info_by_token(&data.claims).await
         }
-        JwtAuthState::Unauthorized => {
-            Err(anyhow::anyhow!("Unauthorized!").into())
-        }
-        JwtAuthState::Forbidden => {
-            Err(anyhow::anyhow!("Forbidden!").into())
-        }
+        JwtAuthState::Unauthorized => Err(anyhow::anyhow!("Unauthorized!").into()),
+        JwtAuthState::Forbidden => Err(anyhow::anyhow!("Forbidden!").into()),
     };
     AppWriter(r)
 }
 
-
 #[handler]
-pub async fn set_current_user_hook(req: &mut Request,depot: &mut Depot,res: &mut Response) {
+pub async fn set_current_user_hook(req: &mut Request, depot: &mut Depot, res: &mut Response) {
     let method = req.method();
     let url = req.uri().path();
-    println!("method: {:?}  uri: {:?}",method,url);
+    let debug_target = format!("{}:{}",method,url);
+    info!("验证请求权限:{debug_target}");
     let state = depot.jwt_auth_state();
     match state {
         JwtAuthState::Authorized => {
@@ -80,12 +80,16 @@ pub async fn set_current_user_hook(req: &mut Request,depot: &mut Depot,res: &mut
             let user = get_user_info_by_token(&data.claims).await;
             match user {
                 Ok(value) => {
+                    let m = method.as_str();
+                    let has_role = value.has_role(m, url);
+                    if !has_role {
+                        res.status_code(StatusCode::UNAUTHORIZED);
+                        res.render("auth failed!");
+                    }
                     depot.insert("user", value);
                 }
-                Err(e) => {
-                }
+                Err(_) => {}
             }
-
         }
         _ => {}
     };
