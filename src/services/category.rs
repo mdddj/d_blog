@@ -6,11 +6,11 @@ use crate::{
     entities::*,
 };
 use sea_orm::{ActiveModelTrait, EntityTrait, Set, NotSet};
+use tracing::info;
+use crate::db::get_db;
 use crate::entities::prelude::Category;
 pub async fn add_category(req: CategoryAddRequest) -> AppResult<CategoryResponse> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
     let model = category::ActiveModel {
 			id: NotSet,
 			name: Set(req.name.clone()),
@@ -24,9 +24,7 @@ pub async fn add_category(req: CategoryAddRequest) -> AppResult<CategoryResponse
     })
 }
 pub async fn update_category(req: CategoryUpdateRequest) -> AppResult<CategoryResponse> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
 
     let find = Category::find_by_id(req.id).one(db).await?;
     if find.is_none() {
@@ -46,16 +44,12 @@ pub async fn update_category(req: CategoryUpdateRequest) -> AppResult<CategoryRe
     })
 }
 pub async fn delete_category(id: i32) -> AppResult<()> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
     Category::delete_by_id(id).exec(db).await?;
     Ok(())
 }
 pub async fn category_find_all() -> AppResult<Vec<CategoryResponse>> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
     let category = Category::find().all(db).await?;
     let res = category
         .into_iter()
@@ -65,6 +59,7 @@ pub async fn category_find_all() -> AppResult<Vec<CategoryResponse>> {
 
         })
         .collect::<Vec<_>>();
+    info!("test");
     Ok(res)
 }
 

@@ -16,7 +16,7 @@ pub struct CategoryUpdateRequest {
     #[salvo(extract(source(from = "param")))]
     pub id: i32,
     //分类名字
-    pub name: String
+    pub name: String,
 }
 
 #[derive(Debug, Serialize, ToSchema, Default)]

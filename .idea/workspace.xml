@@ -8,225 +8,34 @@
     <cargoProject FILE="$PROJECT_DIR$/migration/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb94de4f-d4b6-4c6e-a780-750132af8461" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/bun.lockb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/pnpm-lock.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/src/assets/solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/src/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/src/layout/BaseLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/src/page/home/HomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/src/vite-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-solidjs/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/bun.lockb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/button_loading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/components/form/AddPostCategoryForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/models/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/models/role.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/pages/Auth/failed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/pages/Post/add.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/pages/Post/list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/pages/Role/list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/pages/User/set_role_dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/providers/usePostCategory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-05-31" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-06-09" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-06-12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-06-13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/my-service.log.2024-06-15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migration/src/m20240530_024344_user_roles.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migration/src/m20240615_073331_add_can_delete_column_to_role_table.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dtos/user_role.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/user_role.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/extends/depot.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/extends/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/user_role.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/upload_file.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/user_role.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/db_util.rs" afterDir="false" />
+    <list default="true" id="fb94de4f-d4b6-4c6e-a780-750132af8461" name="更改" comment="优化权限管理">
+      <change afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/main_dart.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/.umirc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/.umirc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/dialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/components/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/components/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/layouts/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/layouts/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/Permission/add.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Permission/add.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/Permission/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Permission/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/Permission/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Permission/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/Role/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Role/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/User/add.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/User/add.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/pages/User/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/User/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/utils/core.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/utils/core.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/utils/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/utils/request.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/utils/token.ts" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/utils/token.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/kotlin/com/example/app/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/values-night/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Flutter/Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Flutter/Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/AppDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ios/RunnerTests/RunnerTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/main.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/flutter/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/flutter/generated_plugin_registrant.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/flutter/generated_plugins.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/main.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/my_application.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/linux/my_application.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Flutter/Flutter-Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Flutter/Flutter-Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/AppDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_1024.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Assets.xcassets/AppIcon.appiconset/app_icon_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Base.lproj/MainMenu.xib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Configs/AppInfo.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Configs/Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Configs/Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Configs/Warnings.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/DebugProfile.entitlements" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/MainFlutterWindow.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/Runner/Release.entitlements" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/macos/RunnerTests/RunnerTests.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pubspec.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test/widget_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/icons/Icon-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/icons/Icon-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/icons/Icon-maskable-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/icons/Icon-maskable-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/web/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/flutter/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/flutter/generated_plugin_registrant.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/flutter/generated_plugins.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/Runner.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/flutter_window.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/flutter_window.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/resource.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/resources/app_icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/runner.exe.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/utils.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/win32_window.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/windows/runner/win32_window.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/demo.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/demo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/my-service.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/my-service.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migration/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/migration/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migration/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/migration/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migration/src/m20240502_062809_create_role_table.rs" beforeDir="false" afterPath="$PROJECT_DIR$/migration/src/m20240502_062809_create_role_table.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migration/src/m20240514_061611_create_role_permission_table.rs" beforeDir="false" afterPath="$PROJECT_DIR$/migration/src/m20240514_061611_create_role_permission_table.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/bun.lockb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/src/assets/solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/src/layout/BaseLayout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/src/page/home/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/src/vite-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-solidjs/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/migration/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migration/src/m20240530_024344_user_roles.rs" beforeDir="false" afterPath="$PROJECT_DIR$/migration/src/m20240530_024344_user_roles.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dtos/category.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/category.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/permission.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/permission.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/permission_role.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/permission_role.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/post.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/post.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/role.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/role.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/user.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/user.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/prelude.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/prelude.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/role.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/role.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/users.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/users.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/permission.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/permission.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/user.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/category.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/category.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/permission.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/permission.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/permission_role.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/permission_role.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/post.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/post.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/role.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/role.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +60,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="cross-compile" />
+        <entry key="$PROJECT_DIR$" value="gitbutler/integration" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -282,7 +91,6 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/admin-solidjs/package.json" />
     <dismissed value="$PROJECT_DIR$/admin/package.json" />
   </component>
   <component name="ProjectColorInfo">{
@@ -295,55 +103,55 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Cargo.Build `Run d_blog`.executor": "Run",
-    "Cargo.Run d_blog.executor": "Debug",
-    "Cargo.Test d_blog.executor": "Run",
-    "Cargo.Test services::post::tests::test_find_blog_by_id.executor": "Run",
-    "Cargo.Test services::product_sku_value::test_save_all.executor": "Run",
-    "Cargo.build.executor": "Run",
-    "Docker.Docker Image (1).executor": "Run",
-    "Docker.Docker Image.executor": "Run",
-    "Docker.Dockerfile (1).executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.联想docker编译.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "gitbutler/integration",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/hlx/github/d_blog",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev (1).executor": "Run",
-    "npm.dev.executor": "Run",
-    "npm.start.executor": "Run",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/migration/src/m20240502_062735_create_permission_table.rs": "true",
-    "org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/src/dtos/product_sku_name_value.rs": "true",
-    "org.rust.first.attach.projects": "true",
-    "org.rust.first.attach.projects.stats": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "show.migrate.to.gradle.popup": "false",
-    "ts.external.directory.path": "/Users/hlx/github/d_blog/admin-solidjs/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Cargo.Build `Run d_blog`.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run d_blog.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test d_blog.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test services::post::tests::test_find_blog_by_id.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test services::product_sku_value::test_save_all.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.build.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Docker Image (1).executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Docker Image.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile (1).executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.联想docker编译.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;0.1.0&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hlx/github/d_blog&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/migration/src/m20240502_062735_create_permission_table.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.disableDetachedFileInspection/Users/hlx/github/d_blog/src/dtos/product_sku_name_value.rs&quot;: &quot;true&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;org.rust.first.attach.projects.stats&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/hlx/github/d_blog/admin-solidjs/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -457,8 +265,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Cargo.Test d_blog" />
       <item itemvalue="Cargo.Run d_blog" />
+      <item itemvalue="Cargo.Test d_blog" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
@@ -688,7 +496,57 @@
       <workItem from="1718329645121" duration="5712000" />
       <workItem from="1718362987559" duration="496000" />
       <workItem from="1718414212835" duration="1487000" />
-      <workItem from="1718430667887" duration="12020000" />
+      <workItem from="1718430667887" duration="12068000" />
+      <workItem from="1718619161059" duration="69000" />
+      <workItem from="1718681996221" duration="1052000" />
+      <workItem from="1718690921445" duration="2847000" />
+      <workItem from="1718776098770" duration="830000" />
+      <workItem from="1718779839264" duration="293000" />
+      <workItem from="1718780645380" duration="215000" />
+      <workItem from="1718780929518" duration="319000" />
+      <workItem from="1718782057159" duration="1208000" />
+      <workItem from="1718784313336" duration="544000" />
+      <workItem from="1718786589062" duration="43000" />
+      <workItem from="1718786876891" duration="581000" />
+      <workItem from="1718787529464" duration="878000" />
+      <workItem from="1718788473515" duration="553000" />
+      <workItem from="1718789360430" duration="965000" />
+      <workItem from="1718791171832" duration="569000" />
+      <workItem from="1718844940076" duration="675000" />
+      <workItem from="1718851413274" duration="6000" />
+      <workItem from="1718851431792" duration="1564000" />
+      <workItem from="1718853569564" duration="305000" />
+      <workItem from="1718855980955" duration="10000" />
+      <workItem from="1718860941826" duration="123000" />
+      <workItem from="1718863709176" duration="5000" />
+      <workItem from="1718863726342" duration="319000" />
+      <workItem from="1718868301674" duration="1160000" />
+      <workItem from="1718875860834" duration="1056000" />
+      <workItem from="1718878379917" duration="644000" />
+      <workItem from="1718881228764" duration="343000" />
+      <workItem from="1718883251218" duration="246000" />
+      <workItem from="1718892515934" duration="323000" />
+      <workItem from="1718933551681" duration="2426000" />
+      <workItem from="1718936191606" duration="637000" />
+      <workItem from="1718937646406" duration="23000" />
+      <workItem from="1718938207825" duration="666000" />
+      <workItem from="1718941561171" duration="6000" />
+      <workItem from="1718941878731" duration="453000" />
+      <workItem from="1718949029113" duration="822000" />
+      <workItem from="1718949865050" duration="355000" />
+      <workItem from="1719364167987" duration="138000" />
+      <workItem from="1719379945712" duration="368000" />
+      <workItem from="1719381788779" duration="335000" />
+      <workItem from="1719455316573" duration="28000" />
+      <workItem from="1719455357462" duration="602000" />
+      <workItem from="1719456597602" duration="368000" />
+      <workItem from="1719457497456" duration="87000" />
+      <workItem from="1719467465689" duration="637000" />
+      <workItem from="1719476312680" duration="9000" />
+      <workItem from="1720062449268" duration="1326000" />
+      <workItem from="1720161815162" duration="135000" />
+      <workItem from="1720579948870" duration="114000" />
+      <workItem from="1720837586171" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="Add business logic">
       <option name="closed" value="true" />
@@ -850,7 +708,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713748360225</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="优化权限管理">
+      <option name="closed" value="true" />
+      <created>1718442911289</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1718442911289</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -888,7 +754,8 @@
     <MESSAGE value="a" />
     <MESSAGE value="b" />
     <MESSAGE value="更改" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改" />
+    <MESSAGE value="优化权限管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化权限管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

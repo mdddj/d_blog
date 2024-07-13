@@ -35,9 +35,7 @@ async fn permission_batch_add(reqs: Vec<PermissionAddRequest>) {
 }
 
 pub async fn update_permission(req: PermissionUpdateRequest) -> AppResult<PermissionResponse> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
 
     let find = Permission::find_by_id(req.id).one(db).await?;
     if find.is_none() {
@@ -59,17 +57,13 @@ pub async fn update_permission(req: PermissionUpdateRequest) -> AppResult<Permis
 }
 
 pub async fn delete_permission(id: i32) -> AppResult<()> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
     Permission::delete_by_id(id).exec(db).await?;
     Ok(())
 }
 
 pub async fn permission_find_all() -> AppResult<Vec<PermissionResponse>> {
-    let db = DB
-        .get()
-        .ok_or(anyhow::anyhow!("Database connection failed."))?;
+    let db = get_db();
     let permission = Permission::find().all(db).await?;
     let res = permission
         .into_iter()
