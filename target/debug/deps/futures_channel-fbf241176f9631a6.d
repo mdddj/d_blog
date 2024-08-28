@@ -1,0 +1,10 @@
+C:\Users\ldd\Documents\GitHub\d_blog\target\debug\deps\libfutures_channel-fbf241176f9631a6.rmeta: C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\lib.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\lock.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\mod.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\queue.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\sink_impl.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\oneshot.rs
+
+C:\Users\ldd\Documents\GitHub\d_blog\target\debug\deps\futures_channel-fbf241176f9631a6.d: C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\lib.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\lock.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\mod.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\queue.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\sink_impl.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\oneshot.rs
+
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\lib.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\lock.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\mod.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\queue.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\mpsc\sink_impl.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.30\src\oneshot.rs:

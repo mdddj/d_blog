@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=C:\Users\ldd\Documents\GitHub\d_blog\target\debug\build\mime-infer-31409cf3c36a28ec\out\mime_types_generated.rs

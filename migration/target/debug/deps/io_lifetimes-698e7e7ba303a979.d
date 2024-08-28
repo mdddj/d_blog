@@ -1,0 +1,10 @@
+C:\Users\ldd\Documents\GitHub\d_blog\migration\target\debug\deps\libio_lifetimes-698e7e7ba303a979.rmeta: C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\lib.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\portability.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\traits.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\example_ffi.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\raw.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\views.rs
+
+C:\Users\ldd\Documents\GitHub\d_blog\migration\target\debug\deps\io_lifetimes-698e7e7ba303a979.d: C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\lib.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\portability.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\traits.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\example_ffi.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\raw.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\views.rs
+
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\lib.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\portability.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\traits.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\example_ffi.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\raw.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\io-lifetimes-1.0.11\src\views.rs:

@@ -1,0 +1,13 @@
+C:\Users\ldd\Documents\GitHub\d_blog\migration\target\debug\deps\liblog-589c97fb1f02462b.rmeta: C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\lib.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\macros.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\serde.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\mod.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\error.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\key.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\source.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\value.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\__private_api.rs
+
+C:\Users\ldd\Documents\GitHub\d_blog\migration\target\debug\deps\log-589c97fb1f02462b.d: C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\lib.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\macros.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\serde.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\mod.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\error.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\key.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\source.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\value.rs C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\__private_api.rs
+
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\lib.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\macros.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\serde.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\mod.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\error.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\key.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\source.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\kv\value.rs:
+C:\Users\ldd\.cargo\registry\src\index.crates.io-6f17d22bba15001f\log-0.4.21\src\__private_api.rs:
